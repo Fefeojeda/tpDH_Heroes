@@ -1,0 +1,41 @@
+body {font-family: Arial, Helvetica, sans-serif;
+background-image: url("/img/imagenBG.png");
+}
+
+.img-bg {
+    /* La imagen que se usa en la barra de navegación */
+    background-image: url("/img/navbarImage.png");
+    
+    min-height: 175px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+    /* Posiciona la barra de navegación dentro de la imagen */
+  .container {
+    position: absolute;
+    width: auto;
+    bottom: 5px;
+  }
+    /* La barra de navegación */
+  .barraNav {
+    overflow: hidden;
+    background-color: #333;
+  }
+    /* Enlaces de la barra */
+  .barraNav a {
+    float: center;
+    color: #ddd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+    .barraNav a:hover {
+    background-color: black;
+    color: #ddd;
+  }
+    .barraNav a.current {
+        background-color: black;
+    }
