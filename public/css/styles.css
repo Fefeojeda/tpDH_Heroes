@@ -1,25 +1,34 @@
-body {font-family: Arial, Helvetica, sans-serif;
-background-image: url("/img/imagenBG.png");
+*{
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.container {
+font-family: Arial, Helvetica, sans-serif;
+max-width: 1920px;
+box-sizing: border-box;
 }
 
 .img-bg {
     /* La imagen que se usa en la barra de navegación */
     background-image: url("/img/navbarImage.png");
-    
-    min-height: 175px;
+    box-sizing: border-box;
+    min-height:175px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
   }
     /* Posiciona la barra de navegación dentro de la imagen */
-  .container {
-    position: absolute;
-    width: auto;
-    bottom: 5px;
+  .containerBarraNavImg {
+    width: 100%;
   }
     /* La barra de navegación */
   .barraNav {
+    display: flex;
+    justify-content: space-evenly;
     overflow: hidden;
     background-color: #333;
   }
@@ -38,4 +47,76 @@ background-image: url("/img/imagenBG.png");
   }
     .barraNav a.current {
         background-color: black;
+        
+  }
+
+  /* Listado de monstruos */
+    .wrapper-main {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 300px 300px;
+    width: 100%;
+    justify-content: space-evenly;
+    grid-row-gap: 80px;
+    padding-top: 50px;
     }
+    
+
+    .img-item {
+      height: 280px;
+      opacity: 1;
+      transition: .5s ease;
+      backface-visibility: hidden;
+      background-color: rgb(37, 37, 51);
+    }
+
+    .img-item img {
+      height: 100%;
+      
+    }
+    .description-item {
+      overflow: hidden;
+      text-align: center;
+      padding: 5px;
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 90%;
+      font-size: 25px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      letter-spacing: 4px;
+      color: #ddd;
+      
+
+    }
+    .description-item a {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    .box-item {
+      position: relative;
+      
+    }
+    .box-item:hover .img-item img{
+    opacity: 0.4;
+    }
+
+    .box-item:hover .description-item {
+      opacity: 1;
+    }
+
+body {
+  background-color: black;
+  background-image: url("/img/imagenBG.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
