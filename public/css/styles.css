@@ -62,7 +62,7 @@ box-sizing: border-box;
 
   /* Listado de monstruos en Inicio*/
   /* Grid de 3 columnas y 2 filas conteniendo los items de imagenes */
-    main {
+    main.home-site {
     display: grid;
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 300px 300px;
@@ -89,7 +89,6 @@ box-sizing: border-box;
       overflow: hidden;
       text-align: center;
       padding: 5px;
-      
       opacity: 0;
       position: absolute;
       top: 50%;
@@ -124,18 +123,13 @@ box-sizing: border-box;
     
     /* Detalles de cada monstruo en sus respectivas páginas*/
     .detail-page {
-      width: 1200px;
-      height: 100%;
-      position: absolute;
+      display: flex;
     }
 
-    .sidenav {
-      width: 130px;
+    .sidebar {
+      width: 10%;
       position: fixed;
-      z-index: 1;
-      top: 200px;
-      left: 10px;
-      background: #eee;
+      background: #333;
       overflow-x: hidden;
       padding: 8px 0;
     }
@@ -144,17 +138,25 @@ box-sizing: border-box;
       padding: 6px 8px 6px 16px;
       text-decoration: none;
       font-size: 22px;
-      color: #2196F3;
+      color: White;
       display: block;
     }
     
     .sidenav a:hover {
-      color: #064579;
+      background-color: black;
     }
     
     .detail {
-      background-color: white;
+      margin-top: 20px;
+      margin-left: 200px;
+      width: 80%;
+      background-color: rgb(88, 87, 87);
       font-size: 18px;
-      padding: 0px 10px;
-      column-width: 1200px;
+    }
+    
+    .info-text-img {
+      margin: 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: rgb(235, 230, 230);
+      ;
     }
