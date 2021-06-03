@@ -155,8 +155,9 @@ box-sizing: border-box;
     }
     
     .info-text-img {
-      margin: 20px;
+      margin: 90px;
       font-family: Georgia, 'Times New Roman', Times, serif;
       color: rgb(235, 230, 230);
-      ;
+      text-align: justify;
+      line-height: 120%;
     }
