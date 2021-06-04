@@ -39,6 +39,7 @@ box-sizing: border-box;
     justify-content: space-evenly;
     overflow: hidden;
     background-color: #333;
+    list-style-type: none;
   }
     /* Enlaces de la barra */
   .barraNav a {
@@ -47,7 +48,7 @@ box-sizing: border-box;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
   }
   /* Efecto al pasar el mouse sobre un enlace de */
     .barraNav a:hover {
